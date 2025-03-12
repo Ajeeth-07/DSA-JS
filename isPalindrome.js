@@ -18,3 +18,23 @@ var isPalindrome = function(x){
 console.log(isPalindrome(121));
 console.log(isPalindrome(-121));
 console.log(isPalindrome(83940));
+
+
+//for string
+var isPalindromeString = function(s){
+    let left = 0;
+    let right = s.length -1;
+
+    while(left <  right){
+        if(s[left] !== s[right]){
+            return false;
+        }
+        left++;
+        right--;
+    }
+
+    return true;
+}
+
+console.log(isPalindromeString("racecar"));
+console.log(isPalindromeString("hello"));

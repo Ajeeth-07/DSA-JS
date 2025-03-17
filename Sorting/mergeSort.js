@@ -1,5 +1,6 @@
 class mergeSort{
 
+    //divide and merge
 
     merge(arr, low, mid, high){
         let temp = [];
@@ -59,7 +60,7 @@ T.C => splitting the array => O(log n);
         Merging each level => O(n)
         total => O(nlogn)
 
-
+S.C => O(n) we use extra temp array
 
 important info
 

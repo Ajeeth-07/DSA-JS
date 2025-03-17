@@ -1,3 +1,14 @@
+/*
+ Selection Sort Algorithm
+In each pass, we select the smallest element from the unsorted part and swap it with the first element of the unsorted part.
+
+Key Observations
+✔ Each pass selects the smallest element from the remaining unsorted part.
+✔ Fewer swaps compared to Bubble Sort (better for write-heavy memory).
+✔ Time Complexity: Worst-case O(n²), best-case O(n²) (even if sorted).
+*/
+
+
 selectionSort = function(arr){
     let size = arr.length;
 
@@ -6,7 +17,7 @@ selectionSort = function(arr){
         for(let j=i; j<=size-1; j++){
             if(arr[j] < arr[mini]){
                 mini = j;
-            }
+            }   
         }
 
         let temp = arr[mini];

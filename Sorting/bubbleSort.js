@@ -7,8 +7,10 @@ var bubbleSort = function(arr){
 
     let n = arr.length;
 
+    //outer loop runs from the last index (n-1) to the first index 0
     for(let i=n-1; i>=0; i--){
         let didSwap = 0;    //optimisation if array is already sorted
+        //inner loop runs from the first index 0 to last index i-1
         for(let j=0; j<=i-1; j++){
             if(arr[j] > arr[j+1]){
                 let temp = arr[j+1];

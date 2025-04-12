@@ -1,1 +1,0 @@
-temp.push(arr[i])
